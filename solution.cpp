@@ -1,13 +1,21 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2015 TODO(your name) <TODO(your email)>
+ * Copyright &copy; 2015 Ben Blazak <bblazak@fullerton.edu>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
 
 /**
- * TODO: program description
+ * This is a short program to turn Arabic numbers into Roman Numerals.
  */
 
-// TODO: `#include`s and function prototypes
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+#include <string>
+using std::string;
+
+string int_to_roman(int n);
 
 // ----------------------------------------------------------------------------
 
@@ -19,5 +27,7 @@ int main() {
 
 // ----------------------------------------------------------------------------
 
-// TODO: other functions
+string int_to_roman(int n) {
+    return "";
+}
 
