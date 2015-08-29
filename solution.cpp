@@ -42,7 +42,8 @@ string int_to_roman(int n)
     
     t=n/10;  
    o=n%10;
-    roman_num = roman_num+ thousands[th]+hundreds[h]+ tens[t]+ones[o]; //Adds the roman numerals together
+   //Adds the roman numerals together
+    roman_num = roman_num+ thousands[th]+hundreds[h]+ tens[t]+ones[o];
     }
     
     
