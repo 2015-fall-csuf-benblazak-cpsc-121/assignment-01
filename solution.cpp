@@ -2,7 +2,7 @@
  * Copyright &copy; 2015 Steven Kha <Stevenvkha@gmail.com>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
-
+#include <iostream>
 /**
  * TODO: program description
  */
