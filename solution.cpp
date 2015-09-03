@@ -1,10 +1,10 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2015 TODO(your name) <TODO(your email)>
+ * Copyright &copy; 2015 Ben Blazak <bblazak@fullerton.edu>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
 
 /**
- * TODO: program description
+ * This is a wonderful description!!!
  */
 
 // TODO: `#include`s and function prototypes
