@@ -77,7 +77,6 @@ string ConRom(int a)
 				roman += "C";
 		}
 		a = a % 100;
-		cout << a << endl;
 	}
 
 	if (a >= 10) // Takes care of X-XC
