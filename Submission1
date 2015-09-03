@@ -2,6 +2,11 @@
  * Copyright &copy; 2015 Jaemin Jin <jaemin_95@csu.fullerton.edu>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
+ 
+/**
+ * Write a program that a number converts into a Roman Numeral.
+ */
+ 
 #include <iostream>
 using std::cin;
 using std::cout;
