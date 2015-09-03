@@ -1,0 +1,140 @@
+/* ----------------------------------------------------------------------------
+* Copyright &copy; 2015 Henry Nguyen <hnguyen310@csu.fullerton.edu>
+* Released under the [MIT License] (http://opensource.org/licenses/MIT)
+* ------------------------------------------------------------------------- */
+
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+int intnum, m, c, x, i;
+
+void conversion(double roman)
+{
+	if (intnum >= 1000)
+	{
+
+		m = intnum / 1000;
+
+		for (int i = 0; i < m; i++)
+		{
+			cout << "M";
+		}
+		intnum = intnum % 1000;
+	}
+
+	if (intnum >= 900)
+	{
+		cout << "CM";
+		intnum = intnum % 900;
+	}
+
+	if (intnum >= 500)
+	{
+		cout << "D";
+		intnum = intnum % 500;
+	}
+
+	if (intnum >= 400)
+	{
+		cout << "CD";
+		intnum = intnum % 400;
+
+	}
+
+	if (intnum >= 100)
+	{
+		c = intnum / 100;
+
+		for (int i = 0; i < c; i++)
+		{
+			cout << "C";
+		}
+		intnum = intnum % 100;
+	}
+
+	if (intnum >= 90)
+	{
+		cout << "XC";
+		intnum = intnum % 90;
+	}
+
+	if (intnum >= 50)
+	{
+		cout << "L";
+		intnum = intnum % 50;
+
+	}
+
+	if (intnum >= 40)
+	{
+		cout << "XL";
+		intnum = intnum % 40;
+	}
+
+	if (intnum >= 10)
+	{
+		x = intnum / 10;
+
+		for (int i = 0; i < x; i++)
+		{
+			cout << "X";
+		}
+		intnum = intnum % 10;
+	}
+
+	if (intnum >= 9)
+	{
+		cout << "IX";
+		intnum = intnum % 9;
+	}
+
+	if (intnum >= 5)
+	{
+		cout << "V";
+		intnum = intnum % 5;
+	}
+
+	if (intnum >= 4)
+	{
+		cout << "IV";
+		intnum = intnum % 4;
+	}
+
+	if (intnum >= 1)
+	{
+		i = intnum / 1;
+
+
+		for (int a = 0; a < i; a++)
+		{
+			cout << "I";
+		}
+		intnum = intnum % 1;
+	}
+}
+
+int main()
+{
+	char answer = 'y';
+
+	while (answer == 'y')
+	{
+		cout << "Please enter an integer: ";
+		cin >> intnum;
+		cout << endl;
+		conversion(intnum);
+		cout << endl;
+		cout << endl;
+
+		cout << "Would you like to convert another integer? ";
+		cin >> answer;
+
+		cout << endl;
+	}
+
+
+	return 0;
+}
