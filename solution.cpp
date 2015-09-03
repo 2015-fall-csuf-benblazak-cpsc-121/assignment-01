@@ -1,10 +1,10 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2015 TODO(your name) <TODO(your email)>
+ * Copyright &copy; 2015 TODO(Weihan Xiao) <TODO(weihan1004@gmail.com)>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
 
 /**
- * TODO: program description
+ * TODO: To transfer numbers into roman numeral type as the output to show user directly.
  */
 
 // TODO: `#include`s and function prototypes
