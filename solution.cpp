@@ -6,22 +6,7 @@ using std::endl;
 int main()
 {
 	
-	char choice;
-
-	do
-		{
-			cout << "\nDo you love me (Y/N): ";
-			cin >> choice;
-
-			if (choice == 'n' || choice == 'N')
-			{
-				cout << "Wrong answer, try again.\n";
-
-			}
-		} while (choice =='n'|| choice =='N' );	
-
-		cout << "Good answer ;) " << endl;
-
+	cout << "This is a test. Ignore it." << endl;
 	return 0;
 
 }
