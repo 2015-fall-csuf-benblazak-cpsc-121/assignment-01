@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------
+//* ----------------------------------------------------------------------------
 * Copyright &copy; 2015 George Calderon <gcald@csu.fullerton.edu>
 * Released under the [MIT License] (http://opensource.org/licenses/MIT)
 * ------------------------------------------------------------------------- */
@@ -27,7 +27,8 @@ int main() {
 		int a;
 		cout << "Please enter an integer:" << endl;
 		cin >> a;
-		if (a >= 4000 || a <= 0) // Makes sure the integer is within valid range
+		if (a >= 4000 || a <= 0) // Makes sure the integer is within valid 
+		//range
 		{
 			cout << "Integer must be from 1 - 3999." << endl;
 		}
@@ -35,10 +36,11 @@ int main() {
 		{
 			cout << "Roman Numeral: " << ConRom(a) << endl;
 		}
-		cout << endl << "Would you like to convert another integer? (y/n)" << endl << 
-		endl; // Multiple endl's to make it prettier.
+		cout << endl << "Would you like to convert another integer? (y/n)" << 
+		endl << endl; // Multiple endl's to make it prettier.
 		cin >> again;
 	}
+	//system("PAUSE");
 	return 0;  // success
 }
 
@@ -77,7 +79,7 @@ string ConRom(int a)
 		a = a % 100;
 		cout << a << endl;
 	}
-	
+
 	if (a >= 10) // Takes care of X-XC
 	{
 		if (a / 10 == 9)
