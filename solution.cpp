@@ -38,7 +38,6 @@ int main() {
 		cout << endl << "Would you like to convert another integer? (y/n)" << endl << endl;
 		cin >> again;
 	}
-	//system("PAUSE");
 	return 0;  // success
 }
 
