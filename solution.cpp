@@ -39,7 +39,6 @@ int main() {
 		endl; // Multiple endl's to make it prettier.
 		cin >> again;
 	}
-	//system("PAUSE");
 	return 0;  // success
 }
 
