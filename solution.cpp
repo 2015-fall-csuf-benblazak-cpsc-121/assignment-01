@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------- */
 
 /**
- * TODO: program description
+ * This is a wonderful description!!!
  */
 
 // TODO: `#include`s and function prototypes
