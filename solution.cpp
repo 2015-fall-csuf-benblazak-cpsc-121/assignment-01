@@ -22,12 +22,12 @@ string again, roman;
 
 int main() {
 	// TODO
-	while (again != "n" && again != "N")
+	while (again != "n" && again != "N") // Checks user input to loop
 	{
 		int a;
 		cout << "Please enter an integer:" << endl;
 		cin >> a;
-		if (a >= 4000 || a <= 0)
+		if (a >= 4000 || a <= 0) // Makes sure the integer is within valid range
 		{
 			cout << "Integer must be from 1 - 3999." << endl;
 		}
@@ -35,9 +35,11 @@ int main() {
 		{
 			cout << "Roman Numeral: " << ConRom(a) << endl;
 		}
-		cout << endl << "Would you like to convert another integer? (y/n)" << endl << endl;
+		cout << endl << "Would you like to convert another integer? (y/n)" << endl << 
+		endl; // Multiple endl's to make it prettier.
 		cin >> again;
 	}
+	//system("PAUSE");
 	return 0;  // success
 }
 
@@ -47,7 +49,7 @@ int main() {
 string ConRom(int a)
 {
 	roman = "";
-	if (a >= 1000)
+	if (a >= 1000) // Takes care of M
 	{
 		for (int i = 0; i < a / 1000; i++)
 		{
@@ -56,7 +58,7 @@ string ConRom(int a)
 		a %= 1000;
 	}
 
-	if (a >= 100)
+	if (a >= 100) // Takes care of C - CM
 	{
 		if (a / 100 == 9)
 			roman += "CM";
@@ -77,7 +79,7 @@ string ConRom(int a)
 		cout << a << endl;
 	}
 	
-	if (a >= 10)
+	if (a >= 10) // Takes care of X-XC
 	{
 		if (a / 10 == 9)
 			roman += "XC";
@@ -97,7 +99,7 @@ string ConRom(int a)
 		a = a % 10;
 	}
 
-	if (a >= 1)
+	if (a >= 1) // Takes care of I-IX
 	{
 		if (a == 9)
 			roman += "IX";
