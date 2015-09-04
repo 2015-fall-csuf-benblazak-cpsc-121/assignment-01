@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2015 TODO(your name) <TODO(your email)>
+ * Copyright &copy; 2015 Jesse Mudd <d3grad3@csu.fullerton.edu>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
 
