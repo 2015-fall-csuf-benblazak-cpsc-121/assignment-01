@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
- * Copyright &copy; 2015 TODO(Weihan Xiao) <TODO(weihan1004@gmail.com)>
+ * Copyright &copy; 2015 (Weihan Xiao) <weihan1004@gmail.com>
  * Released under the [MIT License] (http://opensource.org/licenses/MIT)
  * ------------------------------------------------------------------------- */
 
