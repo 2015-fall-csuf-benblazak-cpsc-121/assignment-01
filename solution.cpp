@@ -29,7 +29,7 @@ while (answer == 'y')
     intnum = (int)num;
     if (intnum >= 1000)
     {
-        m = intnum /1000
+        m = intnum /1000;
         n=0;
         {
             for(n;n<m;n++)
@@ -40,7 +40,7 @@ while (answer == 'y')
     if(intnum>=900)
     {
         cout << "CM";
-        intnum = intnum % 900:
+        intnum = intnum % 900;
     }
     else if (intnum >=500)
     {
@@ -62,14 +62,14 @@ while (answer == 'y')
         {
             c = intnum / 100;
             n = 0;
-            for (n; n<c : n++)
+            for (n; n<c ; n++)
             cout<<"C";
         }
         intnum = intnum % 100;
     }
     if (intnum >=90)
     {
-        cout<<"XC":
+        cout<<"XC";
         intnum = intnum % 90;
     }
     else if (intnum >=50)
@@ -121,11 +121,11 @@ while (answer == 'y')
     {
         i = intnum;
         n = 0; 
-        for (n; n<i, n++)
-        cout"I";
+        for (n; n<i; n++)
+        cout<<"I";
     }
     cout << "\nWould you like to convert another integer(Y/N)?";
-    cin >> yes;
+    cin >> answer;
     cout<<endl;
     
 }
