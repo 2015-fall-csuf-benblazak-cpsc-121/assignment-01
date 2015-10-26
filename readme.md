@@ -17,12 +17,12 @@ Write a program that
   function.
 - Include your copyright and license information at the top of the file, e.g.
 
-    ```c++
-    /* ----------------------------------------------------------------------------
-     * Copyright &copy; 2015 Ben Blazak <bblazak@fullerton.edu>
-     * Released under the [MIT License] (http://opensource.org/licenses/MIT)
-     * ------------------------------------------------------------------------- */
-    ```
+  ```c++
+  /* ----------------------------------------------------------------------------
+   * Copyright &copy; 2015 Ben Blazak <bblazak@fullerton.edu>
+   * Released under the [MIT License] (http://opensource.org/licenses/MIT)
+   * ------------------------------------------------------------------------- */
+  ```
 
 ### Assumptions
 
