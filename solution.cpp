@@ -48,7 +48,7 @@ int main() {
  *   above a (string of) numerals multiplies its value by 1000).
  */
 string number_to_roman(int n) {
-    if (n <=0 || n >= 4000)
+    if (n <= 0 || n >= 4000)
         return "ERROR";
 
     string output = "";
