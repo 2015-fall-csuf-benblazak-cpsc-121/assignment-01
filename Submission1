@@ -1,0 +1,124 @@
+/* ----------------------------------------------------------------------------
+ * Copyright &copy; 2015 Jaemin Jin <jaemin_95@csu.fullerton.edu>
+ * Released under the [MIT License] (http://opensource.org/licenses/MIT)
+ * ------------------------------------------------------------------------- */
+ 
+/**
+ * Write a program that a number converts into a Roman Numeral.
+ */
+ 
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+#include <string>
+using std::string;
+
+void RomanNumerals(int number1);
+
+int main()
+{
+    int number;
+    char loop = 'Y';
+    
+    do
+    {
+        std::cout << "Please enter an integer: ";
+        std::cin  >> number;
+        
+        std::cout << "--> ";
+        RomanNumerals(number);
+        std::cout << endl;
+        std::cout << endl;
+        
+        std::cout << "Would you like to convert another integer (Y/N)? ";
+        std::cin  >> loop;
+        std::cout << endl;
+    } while ((loop == 'y') || (loop == 'Y'));
+    
+    return 0;
+}
+
+void RomanNumerals(int number1)
+{
+    string one = "I";
+    string five = "V";
+    string ten = "X";
+    string fifty = "L";
+    string hundred = "C";
+    string fivehundred = "D";
+    string thousand = "M";
+    
+    if (number1 >= 4000 || number1 <= 0)
+        std::cout << "Undetermined";
+    else if (number1 >= 3000 && number1 < 4000)
+        std::cout << thousand + thousand + thousand;            //"MMM"
+    else if (number1 >= 2000 && number1 < 3000)
+        std::cout << thousand + thousand;                       //"MM"
+    else if (number1 >= 1000 && number1 < 2000)
+        std::cout << thousand;                                  //"M"
+    
+    number1 = number1 % 1000;
+    
+    if (number1 >= 900 && number1 < 1000)
+        std::cout << hundred + thousand;                        //"CM"
+    else if (number1 >= 800 && number1 < 900)
+        std::cout << fivehundred + hundred + hundred + hundred; //"DCCC"
+    else if (number1 >= 700 && number1 < 800)
+        std::cout << fivehundred + hundred + hundred;           //"DCC"
+    else if (number1 >= 600 && number1 < 700)
+        std::cout << fivehundred + hundred;                     //"DC"
+    else if (number1 >= 500 && number1 < 600)
+        std::cout << fivehundred;                               //"D"
+    else if (number1 >= 400 && number1 < 500)
+        std::cout << hundred + fivehundred;                     //"CD"
+    else if (number1 >= 300 && number1 < 400)
+        std::cout << hundred + hundred + hundred;               //"CCC"
+    else if (number1 >= 200 && number1 < 300)
+        std::cout << hundred + hundred;                         //"CC"
+    else if (number1 >= 100 && number1 < 200)
+        std::cout << hundred;                                   //"C"
+    
+    number1 = number1 % 100;
+    
+    if (number1 >= 90 && number1 < 100)
+        std::cout << ten + hundred;                             //"XC"
+    else if (number1 >= 80 && number1 < 90)
+        std::cout << fifty + ten + ten + ten;                   //"LXXX"
+    else if (number1 >= 70 && number1 < 80)
+        std::cout << fifty + ten + ten;                         //"LXX"
+    else if (number1 >= 60 && number1 < 70)
+        std::cout << fifty + ten;                               //"LX"
+    else if (number1 >= 50 && number1 < 60)
+        std::cout << fifty;                                     //"L"
+    else if (number1 >= 40 && number1 < 50)
+        std::cout << ten + fifty;                               //"XL"
+    else if (number1 >= 30 && number1 < 40)
+        std::cout << ten + ten + ten;                           //"XXX"
+    else if (number1 >= 20 && number1 < 30)
+        std::cout << ten + ten;                                 //"XX"
+    else if (number1 >= 10 && number1 < 20)
+        std::cout << ten;                                       //"X"
+    
+    number1 = number1 % 10;
+    
+    if (number1 == 9)
+        std::cout << one + ten;                                 //"IX"
+    else if (number1 == 8)
+        std::cout << five + one + one + one;                    //"VIII"
+    else if (number1 == 7)
+        std::cout << five + one + one;                          //"VII"
+    else if (number1 == 6)
+        std::cout << five + one;                                //"VI"
+    else if (number1 == 5)
+        std::cout << five;                                      //"V"
+    else if (number1 == 4)
+        std::cout << one + five;                                //"IV"
+    else if (number1 == 3)
+        std::cout << one + one + one;                           //"III"
+    else if (number1 == 2)
+        std::cout << one + one;                                 //"II"
+    else if (number1 == 1)
+        std::cout << one;                                       //"I"
+}
