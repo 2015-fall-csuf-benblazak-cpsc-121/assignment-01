@@ -34,8 +34,8 @@ Write a program that
   answers to questions about the language (as opposed to questions about this
   problem).
 
-- Please document and format your code well and consistently, wrap lines at 79
-  or 80 characters whenever possible, and end your file with a blank line; the
+- Please document and format your code well and consistently, wrap lines at column 79
+  or 80 whenever possible, and end your file with a blank line; the
   solution to this problem should only need one file.
 
 ### Sample Run
