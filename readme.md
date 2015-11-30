@@ -35,7 +35,7 @@ Write a program that
   problem).
 
 - Please document and format your code well and consistently, wrap lines at 79
-  or 80 characters whenever possible, and end your file with a blank line; the
+  or 80 columns whenever possible, and end your file with a blank line; the
   solution to this problem should only need one file.
 
 ### Sample Run
