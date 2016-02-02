@@ -1,5 +1,5 @@
 /* assignment1_burkemasles.cpp : Defines the entry point for the console application.
-* Copyright Burke Masles 2016 <burkemasles@csu.fullerton.edu>
+* Copyright Burke Masles 2016 <burkemasles>
 * Released under the [MIT License] (http://opensource.org/licenses/MIT)
 * A program that intakes an integar and outputs the integar into Roman Numerals and
 * has the ability to repeat the process
