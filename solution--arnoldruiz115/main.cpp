@@ -1,25 +1,29 @@
-# assignment-1
 #include <iostream>
 #include <string>
+using std::cin;
+using std::cout;
+using std::string;
+using std::endl;
 
-int romanconverter(int)
-{
-
-}
 
 int main()
 {
 	int num;
-	std::string romnum;
 
-	std::cout << "Please enter an integer: \n";
-	std::cin >> num;
-	std::cout << romnum;
+	cout << "Please enter an integer: \n";
+	cin >> num;
+
+}
+
+string romanconverter(int a) {
+	if (a < 0 || a > 3999)
+		cout << "Error, number can not be less than 0 or greater than 3999." << endl;
 	
-	char repeat;
-	
-	do {
-		std::cout << "Would you like to convert another integer (Y/N)?\n";
-		std::cin >> repeat;
-	} while (repeat == 'Y' || repeat == 'y');
+	string roman_num;
+
+	while(a > 1000){
+		roman_num += "M"; a -=1000 
+	}
+
+
 }
