@@ -1,37 +1,51 @@
 #include <iostream>
-	#include <string>
-	
-	int romanconverter(int)
-	{
-	
-	}
-	
-	int main()
-	{
-		int num;
-		std::string romnum;
-	
-		std::cout << "Please enter an integer: \n";
-		std::cin >> num;
-		std::cout << romnum;
-		
-		char repeat;
-		
-		do {
-			std::cout << "Would you like to convert another integer (Y/N)?\n";
-			std::cin >> repeat;
-		} while (repeat == 'Y' || repeat == 'y');
-	}
-
-#include <iostream>
 using std::cin;
 using std::cout;
 using std::endl;
 
 #include <string>
 using std::string;
+	
+	int main()
+	{
+		int num;
+		char answer;
+		do {
+			
+		cout << "Please enter an integer: \n";
+		cin >> num;
+		cout << "---> " << convert(number) << "\n\n";
+		
+		cout << "Would you like to convert another integer (Y/N)? ";
+		cin >> input;
+		
+		char repeat;
+		
+		do {
+			std::cout << "Would you like to convert another integer (Y/N)?\n";
+			std::cin >> repeat;
+		} while (answer == 'Y' || repeat == 'y');
+	}
 
-string number_to_roman(int n);
+
+
+string convert(int num) {
+	const string numerals[] = {
+		"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX, "V", "IV", "I",
+		const int values[] = {
+			1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1, 
+			
+		};
+	};
+	
+	string return = "";
+	for (int z=0; z < 13; z++) {
+		for (int y=0; y < number / values[z]; y++)
+		return += numerals[z];
+	number %= values[z];
+	}
+	return input;
+}
 
 
 int main() {
