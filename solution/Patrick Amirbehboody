@@ -1,0 +1,79 @@
+//
+//  main.cpp
+//  roman numerals
+//
+//  Created by Patrick Amirbehboody on 2/4/16.
+//  Copyright © 2016 Patrick Amirbehboody. All rights reserved.
+//
+
+
+
+
+#include <iostream>
+
+
+using std :: cout;
+using std :: cin;
+using std :: endl;
+
+int main()
+{
+    
+    double num;
+    int intnum, m, cm, cd, xl, d, c, xc, l, x, v, i, ix, iv;
+    char a = 'y';
+    
+    while (a == 'Y' || a=='y')
+    {
+        cout << "Enter a number:";
+        cin >> num;
+        intnum = (int)num;
+    
+   
+    
+    m = intnum / 1000; intnum -= m * 1000;
+    cm = intnum / 900; intnum -= cm * 900;
+    d =  intnum / 500; intnum -= d * 500;
+    cd =  intnum / 400; intnum -= cd * 400;
+    c =  intnum / 100; intnum -= c * 100;
+    xc =  intnum / 90; intnum -= xc * 90;
+    l =  intnum / 50; intnum -= l * 50;
+    xl =  intnum / 40; intnum -= xl * 40;
+    x =  intnum / 10; intnum -= x * 10;
+    ix =  intnum / 9; intnum -= ix * 9;
+    v =  intnum / 5; intnum -= v * 5;
+    iv =  intnum / 4; intnum -= iv * 4;
+    i =  intnum / 1;
+    
+        cout << " "; // to show the loop running
+        for (m; m>0; m--) cout << "M";
+        if (cm == 1) cout << "CM";
+        
+        for (d; d>0; d--) cout << "D";
+        
+        if (cd == 1) cout << "CD";
+        
+        for (c; c>0; c--) cout << "C";
+        
+        if (xc == 1) cout << "XC";
+        
+        for (l; l>0; l--) cout << "L";
+        
+        if (xl == 1) cout<< "XL";
+        
+        for (x; x>0; x--) cout << "X";
+        
+        if (ix == 1) cout << "IX";
+        
+        for (v; v>0; v--) cout << "V";
+        
+        if (iv == 1) cout << "IV";
+        
+        for (i; i>0; i--) cout << "I";
+    
+        cout << endl << "Again? (y/n):";
+        cin >> a;
+    }
+    
+    return 0;
+}
